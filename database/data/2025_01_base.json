@@ -1,0 +1,445 @@
+{
+    "domains": [
+        {
+            "id": 1,
+            "system": "This App",
+            "domain": ""
+        },
+        {
+            "id": 2,
+            "system": "HRMS",
+            "domain": "https://bit-ecosystem.github.io/bites/sample/hrms"
+        },
+        {
+            "id": 3,
+            "system": "LMS",
+            "domain": "https://bit-ecosystem.github.io/bites/sample/lms"
+        },
+        {
+            "id": 4,
+            "system": "Google",
+            "domain": "https://www.google.com/search?q="
+        },
+        {
+            "id": 5,
+            "system": "GitHub Sample",
+            "domain": "https://bit-ecosystem.github.io/bites/sample"
+        },
+        {
+            "id": 6,
+            "system": "EIP",
+            "domain": "http://10.40.2.71/EIP"
+        }
+    ],
+    "service_catalogs": [
+        {
+            "category": "Staff Self Service",
+            "title": "Performance Management",
+            "description": "Link to module of Performance Management; target setting and target achievement.",
+            "domain_id": 2,
+            "path": "performance",
+            "param": "#data",
+            "image": "catalog/on-target.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Staff Self Service",
+            "title": "Communication and Collaboration",
+            "description": "See what the current company communications.",
+            "domain_id": 4,
+            "path": "",
+            "param": "Communication%20and%20Collaboration",
+            "image": "catalog/communication.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Staff Self Service",
+            "title": "Suggestions and Ideas",
+            "description": "Suggests ideas of improvement to our organization.,",
+            "domain_id": 1,
+            "path": "staff/improvement-ideas",
+            "param": "",
+            "image": "catalog/business-idea.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Staff Self Service",
+            "title": "Payroll and Compensation",
+            "description": "Link to your payroll module.",
+            "domain_id": 2,
+            "path": "payroll",
+            "param": "#data",
+            "image": "catalog/cash-2.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Staff Self Service",
+            "title": "Expense Management",
+            "description": "Link to module of Claims, and perform your claim reimbursement based on the entitlements given to you.",
+            "domain_id": 4,
+            "path": "",
+            "param": "Expense%20Management",
+            "image": "catalog/checklist-3.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Staff Self Service",
+            "title": "Benefits and Entitlements",
+            "description": "View your benefits and entitlement based on your rank in the company.",
+            "domain_id": 2,
+            "path": "benefit",
+            "param": "#data",
+            "image": "catalog/cash-distribution-networ.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Staff Self Service",
+            "title": "Leave and Attendance",
+            "description": "Submit your leave requests, and also your attendance records.",
+            "domain_id": 2,
+            "path": "leave",
+            "param": "#data",
+            "image": "catalog/scheduled.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Staff Self Service",
+            "title": "Onboarding and Offboarding",
+            "description": "See procedures of getting onboarded this organization or leaving/offboarding.",
+            "domain_id": 3,
+            "path": "onboard",
+            "param": "#data",
+            "image": "catalog/receive-package.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Staff Self Service",
+            "title": "Support and Helpdesk",
+            "description": "Link to any requests or incident report you may have.",
+            "domain_id": 1,
+            "path": "staff/support-catalogs",
+            "param": "",
+            "image": "catalog/online-help.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Performance Management",
+            "title": "Performance Reviews",
+            "description": "Participate in performance review processes, view feedback, and set goals.",
+            "domain_id": 2,
+            "path": "performance",
+            "param": "#review",
+            "image": "catalog/measurement.svg",
+            "parent_id": 1
+        },
+        {
+            "category": "Performance Management",
+            "title": "Training and Development",
+            "description": "Access training materials, enroll in courses, and track progress on development plans.",
+            "domain_id": 3,
+            "path": "development",
+            "param": "#menu",
+            "image": "catalog/tutorials.svg",
+            "parent_id": 1
+        },
+        {
+            "category": "Communication and Collaboration",
+            "title": "Company Announcements",
+            "description": "Stay updated with company news, announcements, and policy changes.",
+            "domain_id": 4,
+            "path": "",
+            "param": "Company%20Announcements",
+            "image": "catalog/questions-answers.svg",
+            "parent_id": 2
+        },
+        {
+            "category": "Communication and Collaboration",
+            "title": "Internal Messaging",
+            "description": "Communicate with colleagues and managers through internal messaging systems.",
+            "domain_id": 4,
+            "path": "",
+            "param": "Internal%20Messaging",
+            "image": "catalog/typing-message.svg",
+            "parent_id": 2
+        },
+        {
+            "category": "Payroll and Compensation",
+            "title": "Pay slip",
+            "description": "Access and download monthly or bi-weekly pay slips.",
+            "domain_id": 2,
+            "path": "payroll",
+            "param": "#history",
+            "image": "catalog/money-in-wallet.svg",
+            "parent_id": 4
+        },
+        {
+            "category": "Payroll and Compensation",
+            "title": "Tax Information",
+            "description": "View and update tax-related information, including EA forms and other tax documents.",
+            "domain_id": 2,
+            "path": "payroll",
+            "param": "#history",
+            "image": "catalog/percentage-1.svg",
+            "parent_id": 4
+        },
+        {
+            "category": "Payroll and Compensation",
+            "title": "Compensation Details",
+            "description": "Check salary structure, bonuses, and other compensation-related information.",
+            "domain_id": 2,
+            "path": "payroll",
+            "param": "#history",
+            "image": "catalog/transcation.svg",
+            "parent_id": 4
+        },
+        {
+            "category": "Expense Management",
+            "title": "Expense Claims",
+            "description": "Submit and track expense claims for reimbursement.",
+            "domain_id": 4,
+            "path": "",
+            "param": "Expense%20Claims",
+            "image": "catalog/receipt.svg",
+            "parent_id": 5
+        },
+        {
+            "category": "Expense Management",
+            "title": "Expense Policies",
+            "description": "Access company policies related to travel and other expenses.",
+            "domain_id": 5,
+            "path": "employeehandbook/html",
+            "param": "#expense",
+            "image": "catalog/spiral-notebook.svg",
+            "parent_id": 5
+        },
+        {
+            "category": "Benefits and Entitlements",
+            "title": "Benefits Enrollment",
+            "description": "Enroll in or update health insurance, retirement plans, and other employee benefits.",
+            "domain_id": 2,
+            "path": "benefit",
+            "param": "#apply",
+            "image": "catalog/membership-card.svg",
+            "parent_id": 6
+        },
+        {
+            "category": "Benefits and Entitlements",
+            "title": "Benefits Information",
+            "description": "Access information about various benefits offered by the company.",
+            "domain_id": 5,
+            "path": "employeehandbook/html",
+            "param": "#benefits",
+            "image": "catalog/information.svg",
+            "parent_id": 6
+        },
+        {
+            "category": "Benefits and Entitlements",
+            "title": "Company-issued Equipment",
+            "description": "View Equipment assigned",
+            "domain_id": 2,
+            "path": "benefit",
+            "param": "#custody",
+            "image": "catalog/toolbox.svg",
+            "parent_id": 6
+        },
+        {
+            "category": "Leave and Attendance",
+            "title": "Leave Requests",
+            "description": "Apply for leave, check leave balances, and track the status of leave requests.",
+            "domain_id": 2,
+            "path": "leave",
+            "param": "#apply",
+            "image": "catalog/beach.svg",
+            "parent_id": 7
+        },
+        {
+            "category": "Leave and Attendance",
+            "title": "Attendance Records",
+            "description": "View attendance history, clock-in and clock-out times, and manage time-off requests.",
+            "domain_id": 2,
+            "path": "leave",
+            "param": "#history",
+            "image": "catalog/scheduled.svg",
+            "parent_id": 7
+        },
+        {
+            "category": "Onboarding and Offboarding",
+            "title": "Onboarding Checklists",
+            "description": "Complete onboarding tasks and access necessary resources for new hires.",
+            "domain_id": 3,
+            "path": "onboard",
+            "param": "#checklist",
+            "image": "catalog/checklist-2.svg",
+            "parent_id": 8
+        },
+        {
+            "category": "Onboarding and Offboarding",
+            "title": "Exit Procedures",
+            "description": "Manage offboarding processes, including exit interviews and return of company property.",
+            "domain_id": 3,
+            "path": "offboard",
+            "param": "#checklist",
+            "image": "catalog/shoe-mat.svg",
+            "parent_id": 8
+        },
+        {
+            "category": "Support and Helpdesk",
+            "title": "Helpdesk Tickets",
+            "description": "Submit and track support tickets for",
+            "domain_id": 1,
+            "path": "staff/helpdesks",
+            "param": "",
+            "image": "catalog/call-for-help.svg",
+            "parent_id": 9
+        },
+        {
+            "category": "Support and Helpdesk",
+            "title": "Knowledge Base",
+            "description": "Access FAQs, guides, and other support resources.",
+            "domain_id": 1,
+            "path": "staff/knowledge-catalogs",
+            "param": "",
+            "image": "catalog/open-book.svg",
+            "parent_id": 9
+        },
+        {
+            "category": "Operations",
+            "title": "Operations Area",
+            "description": "View Operations Dashboard",
+            "domain_id": 4,
+            "path": "staff/operations-catalogs",
+            "param": "Operations%20Area",
+            "image": "catalog/rise.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Support",
+            "title": "Support",
+            "description": "View Support Menu",
+            "domain_id": 1,
+            "path": "staff/support-catalogs",
+            "param": "",
+            "image": "catalog/hand-raised.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Learning",
+            "title": "Learning",
+            "description": "Go to LMS",
+            "domain_id": 3,
+            "path": "development",
+            "param": "#menu",
+            "image": "catalog/tutorials.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Knowledge Base",
+            "title": "Knowledge Base",
+            "description": "View Knowledge Base site",
+            "domain_id": 1,
+            "path": "staff/knowledge-catalogs",
+            "param": "",
+            "image": "catalog/open-book.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Ideas",
+            "title": "Employee Improvement Proposal (EIP)",
+            "description": "Submit proposal for improvement",
+            "domain_id": 6,
+            "path": "create",
+            "param": "",
+            "image": "catalog/business-idea.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Ideas",
+            "title": "U See U Act",
+            "description": "Report Security & Safety Finding",
+            "domain_id": 1,
+            "path": "staff/improvement-ideas",
+            "param": "",
+            "image": "catalog/useeuact.svg",
+            "parent_id": ""
+        }
+    ],
+    "user_types": [
+        {
+            "id": 1,
+            "type_name": "Guest",
+            "description": "Any registered user is by default a guest",
+            "tag": "",
+            "home": "about"
+        },
+        {
+            "id": 2,
+            "type_name": "Customer",
+            "description": "A guest that is from companies, our business sells and do transact with",
+            "tag": "",
+            "home": "about"
+        },
+        {
+            "id": 3,
+            "type_name": "Supplier",
+            "description": "A guest that is from companies, our business buys and do transact with",
+            "tag": "",
+            "home": "about"
+        },
+        {
+            "id": 4,
+            "type_name": "Customer",
+            "description": "A temporary label placed on Guest/Customer/Supplier/Candidate visiting our premises",
+            "tag": "Visitor",
+            "home": "about"
+        },
+        {
+            "id": 5,
+            "type_name": "Supplier",
+            "description": "A temporary label placed on Guest/Customer/Supplier/Candidate visiting our premises",
+            "tag": "Visitor",
+            "home": "about"
+        },
+        {
+            "id": 6,
+            "type_name": "Candidate",
+            "description": "A temporary label placed on Guest/Customer/Supplier/Candidate visiting our premises",
+            "tag": "Visitor",
+            "home": ""
+        },
+        {
+            "id": 7,
+            "type_name": "Guest",
+            "description": "A temporary label placed on Guest/Customer/Supplier/Candidate visiting our premises",
+            "tag": "Candidate",
+            "home": ""
+        },
+        {
+            "id": 8,
+            "type_name": "Guest",
+            "description": "A temporary label placed on Guest converting to be Employee/Vendor Contractor visiting our premises",
+            "tag": "New Joiner",
+            "home": ""
+        },
+        {
+            "id": 9,
+            "type_name": "Vendor Contractor",
+            "description": "A guest that is from companies, our organization contract service from, and will be part of and perform jobs in the company",
+            "tag": "",
+            "home": "staff"
+        },
+        {
+            "id": 10,
+            "type_name": "Employee",
+            "description": "A guest[new joiner] that is converted to an employee",
+            "tag": "",
+            "home": "staff"
+        },
+        {
+            "id": 12,
+            "type_name": "Admin",
+            "description": "Administrator of app",
+            "tag": "",
+            "home": "admin"
+        }
+    ]
+}

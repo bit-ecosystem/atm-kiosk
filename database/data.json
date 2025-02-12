@@ -1,0 +1,50 @@
+{
+    "users": [
+        {
+            "name": "John Doe",
+            "email": "john@example.com",
+            "posts": [
+                {
+                    "title": "First Post",
+                    "content": "This is the first post.",
+                    "comments": [
+                        {
+                            "content": "Great post!",
+                            "author": "Alice"
+                        },
+                        {
+                            "content": "Thanks for sharing.",
+                            "author": "Bob"
+                        }
+                    ]
+                },
+                {
+                    "title": "Second Post",
+                    "content": "This is the second post.",
+                    "comments": [
+                        {
+                            "content": "Interesting read.",
+                            "author": "Charlie"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Jane Doe",
+            "email": "jane@example.com",
+            "posts": [
+                {
+                    "title": "Jane's Post",
+                    "content": "This is Jane's post.",
+                    "comments": [
+                        {
+                            "content": "Nice post!",
+                            "author": "Dave"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
