@@ -9,7 +9,6 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Actions\Action;
 use Filament\Tables\Table;
-use Illuminate\Support\Facades\Storage;
 
 class ServiceCatalogResource extends Resource
 {
@@ -45,29 +44,29 @@ class ServiceCatalogResource extends Resource
                             ->where('category', 'Staff Self Service');
                     });
             })->columns([
-                    Tables\Columns\Layout\Stack::make([
-                        Tables\Columns\ImageColumn::make('image')
-                            ->height('50%')
-                            ->width('50%')
-                            ->extraAttributes([
-                                'style' => 'display: flex; justify-content: center; align-items: center;']),
+                Tables\Columns\Layout\Stack::make([
+                    Tables\Columns\ImageColumn::make('image')
+                        ->height('50%')
+                        ->width('50%')
+                        ->extraAttributes([
+                            'style' => 'display: flex; justify-content: center; align-items: center;']),
 
-                        //  Tables\Columns\Layout\Stack::make([
-                        Tables\Columns\TextColumn::make('title')
-                            ->weight('bold')
-                            ->extraAttributes([
-                                'style' => 'text-align: center;',
-                            ]),
-                        //    ),
-                    ])->space(3)
-                        ->alignment('center')
-                        ->extraAttributes(function ($record) {
-                            return [
-                                'title' => "{$record->description}", // Tooltip content
-                                'style' => "background-color: {$record->color}; padding: 5px; border-radius: 5px;",
-                            ];
-                        }),
-                ])
+                    //  Tables\Columns\Layout\Stack::make([
+                    Tables\Columns\TextColumn::make('title')
+                        ->weight('bold')
+                        ->extraAttributes([
+                            'style' => 'text-align: center;',
+                        ]),
+                    //    ),
+                ])->space(3)
+                    ->alignment('center')
+                    ->extraAttributes(function ($record) {
+                        return [
+                            'title' => "{$record->description}", // Tooltip content
+                            'style' => "background-color: {$record->color}; padding: 5px; border-radius: 5px;",
+                        ];
+                    }),
+            ])
             ->filters([
                 // Add filters if needed
             ])
@@ -84,7 +83,7 @@ class ServiceCatalogResource extends Resource
                             if (str_starts_with($record->url, 'http')) {
                                 return $record->url;
                             } else {
-                                return rtrim(config('app.url'), '/') . '/' . ltrim($record->url, '/');
+                                return rtrim(config('app.url'), '/').'/'.ltrim($record->url, '/');
                             }
                         } else {
                             return route('filament.staff.resources.service-catalogs.index', $record);

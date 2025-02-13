@@ -52,5 +52,4 @@ class ListImprovementIdeas extends ListRecords
 
         return $breadcrumbs;
     }
-
 }

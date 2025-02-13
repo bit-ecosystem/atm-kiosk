@@ -15,9 +15,12 @@ class ImprovementIdeaResource extends Resource
     protected static ?string $model = ServiceCatalog::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-light-bulb';
+
     protected static ?string $navigationLabel = 'Improvement Ideas';
+
     protected static ?int $navigationSort = 7;
-        public static function form(Form $form): Form
+
+    public static function form(Form $form): Form
     {
         return $form
             ->schema([

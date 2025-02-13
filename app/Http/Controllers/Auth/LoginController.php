@@ -14,7 +14,7 @@ class LoginController extends Controller
 {
     public function redirectToProvider()
     {
-        Log::info('Using realm: ' . config('services.keycloak.realm'));
+        Log::info('Using realm: '.config('services.keycloak.realm'));
 
         return Socialite::driver('keycloak')->redirect();
     }
@@ -22,7 +22,7 @@ class LoginController extends Controller
     public function handleProviderCallback()
     {
         $user = Socialite::driver('keycloak')->user();
-        //dd($user);
+        // dd($user);
         // Find or create the user in your database
         $authUser = User::firstOrCreate([
             'email' => $user->email,
@@ -33,7 +33,7 @@ class LoginController extends Controller
 
         Auth::login($authUser, true);
         // Check if the user has groups and sync them
-        if (!empty($user->user['user_groups'])) {
+        if (! empty($user->user['user_groups'])) {
             // Transform user groups
             $userGroups = array_map(function ($group) {
                 return str_replace('/', 'ug_', $group);
@@ -41,19 +41,19 @@ class LoginController extends Controller
 
             // Extract and transform realm_access roles
             $realmRoles = [];
-            if (!empty($user->user['realm_access']['roles'])) {
+            if (! empty($user->user['realm_access']['roles'])) {
                 $realmRoles = array_map(function ($role) {
-                    return 'rr_' . $role;
+                    return 'rr_'.$role;
                 }, $user->user['realm_access']['roles']);
             }
 
             // Extract and transform resource_access roles
             $resourceRoles = [];
-            if (!empty($user->user['resource_access'])) {
+            if (! empty($user->user['resource_access'])) {
                 foreach ($user->user['resource_access'] as $resource => $access) {
-                    if (!empty($access['roles'])) {
+                    if (! empty($access['roles'])) {
                         $resourceRoles = array_merge($resourceRoles, array_map(function ($role) use ($resource) {
-                            return 'ra_' . $resource . '_' . $role;
+                            return 'ra_'.$resource.'_'.$role;
                         }, $access['roles']));
                     }
                 }
