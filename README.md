@@ -14,10 +14,21 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## Installation
 
-1. at /srv
+1.
+sudo chown -R nginx:nginx /srv
+sudo chmod -R 755 /srv
+sudo usermod -s /bin/bash nginx
+su - nginx
+cd /srv
+
 2. Do
 git clone https://github.com/bit-ecosystem/kiosk.git
+cd /srv/kiosk
+
 composer install
+npm install
+npm run build
+
 cp .env.example .env
 php artisan key:generate
 
@@ -29,8 +40,7 @@ php artisan storage:link
 php artisan migrate
 php artisan migrate:fresh --seed
 
-npm install
-npm run build
+
 
 sudo chown -R nginx:nginx /srv/kiosk/storage
 sudo chmod -R 755 /srv/kiosk/storage
