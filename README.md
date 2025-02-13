@@ -28,3 +28,26 @@ php artisan storage:link
 
 php artisan migrate
 php artisan migrate:fresh --seed
+
+npm install
+npm run build
+
+sudo chown -R nginx:nginx /srv/kiosk/storage
+sudo chmod -R 755 /srv/kiosk/storage
+
+sudo chown -R nginx:nginx /srv/kiosk/bootstrap/cache
+sudo chmod -R 755 /srv/kiosk/bootstrap/cache
+
+sudo chown nginx:nginx /srv/kiosk/database/database.sqlite
+sudo chmod 755 /srv/kiosk/database/database.sqlite
+
+sudo chown -R nginx:nginx /srv/kiosk/public
+sudo chmod -R 755 /srv/kiosk/public
+
+sudo chcon -R -t httpd_sys_rw_content_t /srv/kiosk/storage
+sudo systemctl restart nginx
+
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear
