@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
         $this->call([
-            JsonDBSeeder::class, ]);
+            JsonDBSeeder::class,
+            RolesAndPermissionsSeeder::class ]);
     }
 }
