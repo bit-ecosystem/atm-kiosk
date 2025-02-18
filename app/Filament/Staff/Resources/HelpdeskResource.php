@@ -3,7 +3,7 @@
 namespace App\Filament\Staff\Resources;
 
 use App\Filament\Staff\Resources\HelpdeskResource\Pages;
-use App\Models\ServiceCatalog;
+use App\Models\ServiceMenu;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Infolists\Components\ColorEntry;
@@ -18,7 +18,7 @@ use Filament\Tables\Table;
 
 class HelpdeskResource extends Resource
 {
-    protected static ?string $model = ServiceCatalog::class;
+    protected static ?string $model = ServiceMenu::class;
 
     protected static ?string $navigationGroup = 'Manager';
 
@@ -64,7 +64,7 @@ class HelpdeskResource extends Resource
                 TextEntry::make('url')
                     ->label('URL')
                     ->columnSpanFull()
-                    ->url(fn (ServiceCatalog $record): string => '#'.urlencode($record->url)),
+                    ->url(fn (ServiceMenu $record): string => '#'.urlencode($record->url)),
                 ImageEntry::make('image'),
             ]);
     }

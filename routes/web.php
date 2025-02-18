@@ -5,10 +5,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('landing');
+
+Route::get('/landing1', function () {
+    return view('landing1');
+})->name('landing1');
 
 Route::get('auth/redirect', [LoginController::class, 'redirectToProvider']);
 Route::get('auth/callback', [LoginController::class, 'handleProviderCallback']);
+
+//route::post('staff/logout',Filament\Http\Controllers\Auth\LogoutController::class)
+// Route::post('staff/logout', function () {
+//     // Redirect to home page
+//     return redirect('/');
+// });
 
 Route::middleware([
     'auth:sanctum',

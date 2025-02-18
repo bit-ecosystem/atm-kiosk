@@ -3,7 +3,7 @@
 namespace App\Filament\Staff\Resources;
 
 use App\Filament\Staff\Resources\DepartmentResource\Pages;
-use App\Models\Department;
+use App\Models\Org\Department;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;

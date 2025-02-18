@@ -29,9 +29,14 @@
             "id": 6,
             "system": "EIP",
             "domain": "http://10.40.2.71/EIP"
+        },
+        {
+            "id": 7,
+            "system": "ATMPortal",
+            "domain": "http://atmportal"
         }
     ],
-    "service_catalogs": [
+    "service_menus": [
         {
             "category": "Staff Self Service",
             "title": "Performance Management",
@@ -39,7 +44,7 @@
             "domain_id": 2,
             "path": "performance",
             "param": "#data",
-            "image": "catalog/on-target.svg",
+            "image": "menu/on-target.svg",
             "parent_id": ""
         },
         {
@@ -49,7 +54,7 @@
             "domain_id": 4,
             "path": "",
             "param": "Communication%20and%20Collaboration",
-            "image": "catalog/communication.svg",
+            "image": "menu/communication.svg",
             "parent_id": ""
         },
         {
@@ -59,7 +64,7 @@
             "domain_id": 1,
             "path": "staff/improvement-ideas",
             "param": "",
-            "image": "catalog/business-idea.svg",
+            "image": "menu/business-idea.svg",
             "parent_id": ""
         },
         {
@@ -69,7 +74,7 @@
             "domain_id": 2,
             "path": "payroll",
             "param": "#data",
-            "image": "catalog/cash-2.svg",
+            "image": "menu/cash-2.svg",
             "parent_id": ""
         },
         {
@@ -79,7 +84,7 @@
             "domain_id": 4,
             "path": "",
             "param": "Expense%20Management",
-            "image": "catalog/checklist-3.svg",
+            "image": "menu/checklist-3.svg",
             "parent_id": ""
         },
         {
@@ -89,7 +94,7 @@
             "domain_id": 2,
             "path": "benefit",
             "param": "#data",
-            "image": "catalog/cash-distribution-networ.svg",
+            "image": "menu/cash-distribution-networ.svg",
             "parent_id": ""
         },
         {
@@ -99,7 +104,7 @@
             "domain_id": 2,
             "path": "leave",
             "param": "#data",
-            "image": "catalog/scheduled.svg",
+            "image": "menu/scheduled.svg",
             "parent_id": ""
         },
         {
@@ -109,7 +114,7 @@
             "domain_id": 3,
             "path": "onboard",
             "param": "#data",
-            "image": "catalog/receive-package.svg",
+            "image": "menu/receive-package.svg",
             "parent_id": ""
         },
         {
@@ -117,9 +122,9 @@
             "title": "Support and Helpdesk",
             "description": "Link to any requests or incident report you may have.",
             "domain_id": 1,
-            "path": "staff/support-catalogs",
+            "path": "staff/support-menus",
             "param": "",
-            "image": "catalog/online-help.svg",
+            "image": "menu/online-help.svg",
             "parent_id": ""
         },
         {
@@ -129,17 +134,17 @@
             "domain_id": 2,
             "path": "performance",
             "param": "#review",
-            "image": "catalog/measurement.svg",
+            "image": "menu/measurement.svg",
             "parent_id": 1
         },
         {
             "category": "Performance Management",
             "title": "Training and Development",
             "description": "Access training materials, enroll in courses, and track progress on development plans.",
-            "domain_id": 3,
-            "path": "development",
+            "domain_id": 1,
+            "path": "staff/learning-menus",
             "param": "#menu",
-            "image": "catalog/tutorials.svg",
+            "image": "menu/tutorials.svg",
             "parent_id": 1
         },
         {
@@ -149,7 +154,7 @@
             "domain_id": 4,
             "path": "",
             "param": "Company%20Announcements",
-            "image": "catalog/questions-answers.svg",
+            "image": "menu/questions-answers.svg",
             "parent_id": 2
         },
         {
@@ -159,7 +164,7 @@
             "domain_id": 4,
             "path": "",
             "param": "Internal%20Messaging",
-            "image": "catalog/typing-message.svg",
+            "image": "menu/typing-message.svg",
             "parent_id": 2
         },
         {
@@ -169,7 +174,7 @@
             "domain_id": 2,
             "path": "payroll",
             "param": "#history",
-            "image": "catalog/money-in-wallet.svg",
+            "image": "menu/money-in-wallet.svg",
             "parent_id": 4
         },
         {
@@ -179,7 +184,7 @@
             "domain_id": 2,
             "path": "payroll",
             "param": "#history",
-            "image": "catalog/percentage-1.svg",
+            "image": "menu/percentage-1.svg",
             "parent_id": 4
         },
         {
@@ -189,7 +194,7 @@
             "domain_id": 2,
             "path": "payroll",
             "param": "#history",
-            "image": "catalog/transcation.svg",
+            "image": "menu/transcation.svg",
             "parent_id": 4
         },
         {
@@ -199,7 +204,7 @@
             "domain_id": 4,
             "path": "",
             "param": "Expense%20Claims",
-            "image": "catalog/receipt.svg",
+            "image": "menu/receipt.svg",
             "parent_id": 5
         },
         {
@@ -209,7 +214,7 @@
             "domain_id": 5,
             "path": "employeehandbook/html",
             "param": "#expense",
-            "image": "catalog/spiral-notebook.svg",
+            "image": "menu/spiral-notebook.svg",
             "parent_id": 5
         },
         {
@@ -219,7 +224,7 @@
             "domain_id": 2,
             "path": "benefit",
             "param": "#apply",
-            "image": "catalog/membership-card.svg",
+            "image": "menu/membership-card.svg",
             "parent_id": 6
         },
         {
@@ -229,7 +234,7 @@
             "domain_id": 5,
             "path": "employeehandbook/html",
             "param": "#benefits",
-            "image": "catalog/information.svg",
+            "image": "menu/information.svg",
             "parent_id": 6
         },
         {
@@ -239,7 +244,7 @@
             "domain_id": 2,
             "path": "benefit",
             "param": "#custody",
-            "image": "catalog/toolbox.svg",
+            "image": "menu/toolbox.svg",
             "parent_id": 6
         },
         {
@@ -249,7 +254,7 @@
             "domain_id": 2,
             "path": "leave",
             "param": "#apply",
-            "image": "catalog/beach.svg",
+            "image": "menu/beach.svg",
             "parent_id": 7
         },
         {
@@ -259,7 +264,7 @@
             "domain_id": 2,
             "path": "leave",
             "param": "#history",
-            "image": "catalog/scheduled.svg",
+            "image": "menu/scheduled.svg",
             "parent_id": 7
         },
         {
@@ -269,7 +274,7 @@
             "domain_id": 3,
             "path": "onboard",
             "param": "#checklist",
-            "image": "catalog/checklist-2.svg",
+            "image": "menu/checklist-2.svg",
             "parent_id": 8
         },
         {
@@ -279,7 +284,7 @@
             "domain_id": 3,
             "path": "offboard",
             "param": "#checklist",
-            "image": "catalog/shoe-mat.svg",
+            "image": "menu/shoe-mat.svg",
             "parent_id": 8
         },
         {
@@ -289,7 +294,7 @@
             "domain_id": 1,
             "path": "staff/helpdesks",
             "param": "",
-            "image": "catalog/call-for-help.svg",
+            "image": "menu/call-for-help.svg",
             "parent_id": 9
         },
         {
@@ -297,19 +302,29 @@
             "title": "Knowledge Base",
             "description": "Access FAQs, guides, and other support resources.",
             "domain_id": 1,
-            "path": "staff/knowledge-catalogs",
+            "path": "staff/knowledge-menus",
             "param": "",
-            "image": "catalog/open-book.svg",
+            "image": "menu/open-book.svg",
             "parent_id": 9
         },
         {
             "category": "Operations",
             "title": "Operations Area",
             "description": "View Operations Dashboard",
-            "domain_id": 4,
-            "path": "staff/operations-catalogs",
+            "domain_id": 7,
+            "path": "operations.asp",
             "param": "Operations%20Area",
-            "image": "catalog/rise.svg",
+            "image": "menu/stats-on-cell.svg",
+            "parent_id": ""
+        },
+        {
+            "category": "Operations",
+            "title": "Production Dashboard",
+            "description": "View Production Dashboard",
+            "domain_id": 7,
+            "path": "production_dashboard.asp",
+            "param": "Production%20Dashboard",
+            "image": "menu/rise.svg",
             "parent_id": ""
         },
         {
@@ -317,9 +332,9 @@
             "title": "Support",
             "description": "View Support Menu",
             "domain_id": 1,
-            "path": "staff/support-catalogs",
+            "path": "staff/support-menus",
             "param": "",
-            "image": "catalog/hand-raised.svg",
+            "image": "menu/hand-raised.svg",
             "parent_id": ""
         },
         {
@@ -329,7 +344,7 @@
             "domain_id": 3,
             "path": "development",
             "param": "#menu",
-            "image": "catalog/tutorials.svg",
+            "image": "menu/tutorials.svg",
             "parent_id": ""
         },
         {
@@ -337,9 +352,9 @@
             "title": "Knowledge Base",
             "description": "View Knowledge Base site",
             "domain_id": 1,
-            "path": "staff/knowledge-catalogs",
+            "path": "staff/knowledge-menus",
             "param": "",
-            "image": "catalog/open-book.svg",
+            "image": "menu/open-book.svg",
             "parent_id": ""
         },
         {
@@ -349,7 +364,7 @@
             "domain_id": 6,
             "path": "create",
             "param": "",
-            "image": "catalog/business-idea.svg",
+            "image": "menu/business-idea.svg",
             "parent_id": ""
         },
         {
@@ -359,7 +374,7 @@
             "domain_id": 1,
             "path": "staff/improvement-ideas",
             "param": "",
-            "image": "catalog/useeuact.svg",
+            "image": "menu/useeuact.svg",
             "parent_id": ""
         }
     ],

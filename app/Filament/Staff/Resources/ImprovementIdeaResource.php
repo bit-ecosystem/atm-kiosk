@@ -3,7 +3,7 @@
 namespace App\Filament\Staff\Resources;
 
 use App\Filament\Staff\Resources\ImprovementIdeaResource\Pages;
-use App\Models\ServiceCatalog;
+use App\Models\ServiceMenu;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -12,7 +12,7 @@ use Filament\Tables\Table;
 
 class ImprovementIdeaResource extends Resource
 {
-    protected static ?string $model = ServiceCatalog::class;
+    protected static ?string $model = ServiceMenu::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-light-bulb';
 
@@ -34,7 +34,7 @@ class ImprovementIdeaResource extends Resource
             ->query(function () {
                 $parentId = request()->route('record');
 
-                return ServiceCatalog::query()
+                return ServiceMenu::query()
                     ->when($parentId, function ($query, $parentId) {
                         // If parentId is present, filter by parent_id
                         return $query->where('parent_id', $parentId);

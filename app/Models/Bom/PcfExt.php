@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class PcfExt extends Model
 {
     use HasFactory;
-
+    protected $table = 'bom_pcf_ext';
     protected $fillable = [
         'pcf_id', 'responsible', 'accountable', 'shortcode', 'apqc',
 

@@ -21,5 +21,10 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@email.com',
             'user_type_id' => 12,
         ]);
+        User::factory()->create([
+            'name' => 'Ahmad Faros',
+            'email' => 'ahmadfaros.othman@amkor.com',
+            'user_type_id' => 10,
+        ]);
     }
 }

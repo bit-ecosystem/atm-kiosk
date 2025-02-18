@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Pcf extends Model
 {
     use HasFactory;
-
+    protected $table = 'bom_pcf';
     protected $fillable = [
         'hierarchy_code',
         'name',

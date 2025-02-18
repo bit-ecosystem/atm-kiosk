@@ -5,10 +5,10 @@ namespace App\Models\Org;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-
+use Spatie\Permission\Traits\HasRoles;
 class StaffRole extends Model
 {
-    use HasFactory;
+    use HasFactory, HasRoles;
 
     protected $table = 'org_staff_roles';
 

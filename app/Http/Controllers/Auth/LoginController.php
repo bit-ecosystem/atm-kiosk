@@ -22,8 +22,12 @@ class LoginController extends Controller
     public function handleProviderCallback()
     {
         $user = Socialite::driver('keycloak')->user();
-        // dd($user);
-        // Find or create the user in your database
+
+        $userJson = json_encode($user);
+        //dump($user);
+        // Store user data in session
+        session(['keycloak_user' => $userJson]);
+
         $authUser = User::firstOrCreate([
             'email' => $user->email,
         ], [
@@ -32,14 +36,12 @@ class LoginController extends Controller
         ]);
 
         Auth::login($authUser, true);
-        // Check if the user has groups and sync them
+
         if (! empty($user->user['user_groups'])) {
-            // Transform user groups
             $userGroups = array_map(function ($group) {
                 return str_replace('/', 'ug_', $group);
             }, $user->user['user_groups']);
 
-            // Extract and transform realm_access roles
             $realmRoles = [];
             if (! empty($user->user['realm_access']['roles'])) {
                 $realmRoles = array_map(function ($role) {
@@ -47,7 +49,6 @@ class LoginController extends Controller
                 }, $user->user['realm_access']['roles']);
             }
 
-            // Extract and transform resource_access roles
             $resourceRoles = [];
             if (! empty($user->user['resource_access'])) {
                 foreach ($user->user['resource_access'] as $resource => $access) {
@@ -59,13 +60,11 @@ class LoginController extends Controller
                 }
             }
 
-            // Combine all groups and roles
             $allGroups = array_merge($userGroups, $realmRoles, $resourceRoles);
 
-            // Sync groups
             $this->syncGroups($authUser, $allGroups);
         }
-        // Get the home URL from the user type
+
         $homeUrl = $authUser->userType->home ?? '/';
 
         return redirect()->intended($homeUrl);

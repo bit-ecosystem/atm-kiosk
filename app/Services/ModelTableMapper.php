@@ -27,13 +27,21 @@ class ModelTableMapper
 
         foreach ($files as $file) {
             $namespace = 'App\\Models\\';
-            $class = $namespace.str_replace(['/', '.php'], ['\\', ''], $file->getRelativePathname());
+            $relativePath = str_replace(['/', '.php'], ['\\', ''], $file->getRelativePathname());
+            $class = $namespace.$relativePath;
 
-            if (class_exists($class)) {
+            if (class_exists($class) && ! $this->usesSushiTrait($class)) {
                 $models[] = $class;
             }
         }
 
         return $models;
+    }
+
+    private function usesSushiTrait($class)
+    {
+        $traits = class_uses($class);
+
+        return in_array('Sushi', $traits);
     }
 }

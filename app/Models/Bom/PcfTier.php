@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class PcfTier extends Model
 {
     use HasFactory;
-
+    protected $table = 'bom_pcf_tier';
     protected $fillable = [
         'level', 'description',
     ];

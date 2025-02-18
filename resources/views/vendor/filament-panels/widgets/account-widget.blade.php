@@ -1,7 +1,3 @@
-@php
-    $user = filament()->auth()->user();
-@endphp
-
 <x-filament-widgets::widget class="fi-account-widget">
     <x-filament::section>
         <div class="flex items-center justify-between gap-x-2">
@@ -15,26 +11,26 @@
                         {{ __('filament-panels::widgets/account-widget.welcome', ['app' => config('app.name')]) }}
                     </h2>
                     <p class="text-sm text-gray-500 dark:text-gray-400">
-                        {{ filament()->getUserName($user) }}
-                    </p>
+                             {{ filament()->getUserName($user) }}
+                   </p>
                 </div>
             </div>
-                <div class="flex flex-col justify-end gap-y-2">
-                    <x-filament::link color="gray" href="http://atmportal/home.asp"
-                        icon="heroicon-m-globe-asia-australia" rel="noopener noreferrer" target="_blank">
-                        To ATM Portal
-                    </x-filament::link>
+            <div class="flex flex-col justify-end gap-y-2">
+                <x-filament::link color="gray" href="http://atmportal/home.asp"
+                    icon="heroicon-m-globe-asia-australia" rel="noopener noreferrer" target="_blank">
+                    To ATM Portal
+                </x-filament::link>
 
-                    <form action="{{ filament()->getLogoutUrl() }}" method="post" class="my-auto">
-                        @csrf
+                <form action="{{ filament()->getLogoutUrl() }}" method="post" class="my-auto">
+                    @csrf
 
-                        <x-filament::button color="gray" icon="heroicon-m-arrow-left-on-rectangle"
-                            icon-alias="panels::widgets.account.logout-button" labeled-from="sm" tag="button"
-                            type="submit">
-                            {{ __('filament-panels::widgets/account-widget.actions.logout.label') }}
-                        </x-filament::button>
-                    </form>
-                </div>
+                    <x-filament::button color="gray" icon="heroicon-m-arrow-left-on-rectangle"
+                        icon-alias="panels::widgets.account.logout-button" labeled-from="sm" tag="button"
+                        type="submit">
+                        {{ __('filament-panels::widgets/account-widget.actions.logout.label') }}
+                    </x-filament::button>
+                </form>
+            </div>
         </div>
     </x-filament::section>
 </x-filament-widgets::widget>

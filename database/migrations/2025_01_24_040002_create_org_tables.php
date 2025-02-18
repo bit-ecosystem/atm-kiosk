@@ -40,6 +40,7 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->foreignId('org_staff_id')->nullable()->constrained('org_staff')->onDelete('cascade'); // Foreign key to staff table
             $table->foreignId('reports_to_id')->nullable()->constrained('org_job_positions')->onDelete('cascade');
+            $table->string('unique_id');
             $table->string('title');
             $table->string('description');
             $table->string('emasco')->nullable();
@@ -58,6 +59,28 @@ return new class extends Migration
             $table->foreignId('org_job_role_id')->constrained('org_job_roles')->onDelete('cascade');
             $table->timestamps();
         });
+
+        Schema::create('org_companies', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('description');
+            $table->timestamps();
+        });
+
+        Schema::create('org_divisions', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('description');
+            $table->timestamps();
+        });
+
+        Schema::create('org_departments', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->foreignId('department');
+            $table->string('name');
+            $table->string('description')->nullable();
+            $table->timestamps();
+        });
     }
 
     /**
@@ -65,6 +88,10 @@ return new class extends Migration
      */
     public function down(): void
     {
+
+        Schema::dropIfExists('org_departments');
+        Schema::dropIfExists('org_divisions');
+        Schema::dropIfExists('org_companies');
         Schema::dropIfExists('org_job_position_job_role');
         Schema::dropIfExists('org_job_roles');
         Schema::dropIfExists('org_job_positions');

@@ -2,7 +2,7 @@
 
 namespace App\Models\Org;
 
-use App\Models\Department;
+use App\Models\Org\Department;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -14,13 +14,24 @@ class JobPosition extends Model
 
     protected $table = 'org_job_positions';
 
-    protected $fillable = [
-        'title',
-    ];
+    protected $fillable = ['title', 'unique_id', 'created_at'];
 
-    protected $casts = [
+    public static function boot()
+    {
+        parent::boot();
 
-    ];
+        // Hook into the creating event
+        static::creating(function ($model) {
+            $model->unique_id = $model->generateUniqueId();
+        });
+    }
+
+    public function generateUniqueId()
+    {
+        $timestamp = \Carbon\Carbon::parse($this->created_at)->timestamp;
+
+        return $this->title.$timestamp;
+    }
 
     public static function create(array $attributes = [])
     {

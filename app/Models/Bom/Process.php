@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Process extends Model
 {
     use HasFactory;
-
+    protected $table = 'bom_processes';
     protected $fillable = [
         'pcf_id', 'name', 'inputs', 'outputs', 'suppliers', 'customers', 'resources', 'controls', 'description',
 

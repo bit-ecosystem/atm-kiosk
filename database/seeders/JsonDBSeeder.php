@@ -16,13 +16,11 @@ class JsonDBSeeder extends Seeder
         // Get the array of tables with their associated models
         $mapper = new ModelTableMapper;
         $tablesWithModels = $mapper->getTablesWithModels();
-        // dd($tablesWithModels);
         foreach ($files as $file) {
             if ($file->getExtension() === 'json') {
                 // Read the JSON file
                 $json = File::get($file->getPathname());
                 $data = json_decode($json, true);
-                // dd($data);
                 // Iterate through each table in the JSON data
                 foreach ($data as $table => $records) {
                     if (array_key_exists($table, $tablesWithModels)) {
@@ -62,7 +60,6 @@ class JsonDBSeeder extends Seeder
 
         // Insert or update the main record and get its instance
         $mainModel = $modelClass::firstOrCreate($mainRecord);
-
         // Check if the record contains nested data for related tables
         foreach ($record as $key => $value) {
             if (is_array($value) && array_key_exists($key, $tablesWithModels)) {

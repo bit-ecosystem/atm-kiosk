@@ -7,6 +7,7 @@ use App\Models\Event;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Fieldset;
 use Filament\Tables;
 use Filament\Tables\Table;
 
@@ -16,7 +17,7 @@ class EventResource extends Resource
 
     protected static ?string $navigationGroup = 'Calendar';
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-calendar-date-range';
 
     public static function form(Form $form): Form
     {
@@ -26,13 +27,18 @@ class EventResource extends Resource
                     ->required(),
                 Forms\Components\Textarea::make('description')
                     ->columnSpanFull(),
-                Forms\Components\DateTimePicker::make('start')
-                    ->required(),
-                Forms\Components\DateTimePicker::make('end'),
+                    Fieldset::make('URL')
+                    ->schema([
+                        Forms\Components\DateTimePicker::make('start')
+                        ->required(),
+                        Forms\Components\DateTimePicker::make('end'),
+                        Forms\Components\Toggle::make('all_day'),
+                    ])->columns(3),
+
+
                 Forms\Components\TextInput::make('url'),
-                Forms\Components\TextInput::make('color'),
-                Forms\Components\Toggle::make('all_day')
-                    ->required(),
+                Forms\Components\ColorPicker::make('color'),
+
             ]);
     }
 
