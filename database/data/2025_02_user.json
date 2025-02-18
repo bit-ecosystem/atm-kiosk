@@ -1,5 +1,5 @@
 {
-    "user_types": [
+    "users": [
         {
             "id": 1,
             "name": "Faros",
@@ -13,7 +13,7 @@
             "user_type_id": 10
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "Muhammad Afiq",
             "email": "muhammadafiq.kamalruzaman@amkor.com",
             "user_type_id": 10

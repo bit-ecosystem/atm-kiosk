@@ -1,5 +1,5 @@
 {
-    "role": [
+    "roles": [
         {
             "id": 1,
             "name": "admin",
@@ -15,7 +15,7 @@
             "updated_at": "2025-02-17 15:31:56"
         }
     ],
-    "permission": [
+    "permissions": [
         {
             "id": 1,
             "name": "view filament shield",
@@ -2984,6 +2984,11 @@
             "role_id": 2,
             "model_type": "App\\Models\\User",
             "model_id": 2
+        },
+        {
+            "role_id": 2,
+            "model_type": "App\\Models\\User",
+            "model_id": 3
         }
     ]
 }
