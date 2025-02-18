@@ -1,0 +1,2989 @@
+{
+    "role": [
+        {
+            "id": 1,
+            "name": "admin",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:17:37",
+            "updated_at": "2025-02-17 15:17:37"
+        },
+        {
+            "id": 2,
+            "name": "super_admin",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:31:56",
+            "updated_at": "2025-02-17 15:31:56"
+        }
+    ],
+    "permission": [
+        {
+            "id": 1,
+            "name": "view filament shield",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:17:43",
+            "updated_at": "2025-02-17 15:17:43"
+        },
+        {
+            "id": 2,
+            "name": "view_department",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 3,
+            "name": "view_any_department",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 4,
+            "name": "create_department",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 5,
+            "name": "update_department",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 6,
+            "name": "restore_department",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 7,
+            "name": "restore_any_department",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 8,
+            "name": "replicate_department",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 9,
+            "name": "reorder_department",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 10,
+            "name": "delete_department",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 11,
+            "name": "delete_any_department",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 12,
+            "name": "force_delete_department",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 13,
+            "name": "force_delete_any_department",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 14,
+            "name": "view_domain",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 15,
+            "name": "view_any_domain",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 16,
+            "name": "create_domain",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 17,
+            "name": "update_domain",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 18,
+            "name": "restore_domain",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 19,
+            "name": "restore_any_domain",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 20,
+            "name": "replicate_domain",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 21,
+            "name": "reorder_domain",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 22,
+            "name": "delete_domain",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 23,
+            "name": "delete_any_domain",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 24,
+            "name": "force_delete_domain",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 25,
+            "name": "force_delete_any_domain",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 26,
+            "name": "view_employee::handbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 27,
+            "name": "view_any_employee::handbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 28,
+            "name": "create_employee::handbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 29,
+            "name": "update_employee::handbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 30,
+            "name": "restore_employee::handbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 31,
+            "name": "restore_any_employee::handbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 32,
+            "name": "replicate_employee::handbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 33,
+            "name": "reorder_employee::handbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 34,
+            "name": "delete_employee::handbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 35,
+            "name": "delete_any_employee::handbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 36,
+            "name": "force_delete_employee::handbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 37,
+            "name": "force_delete_any_employee::handbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 38,
+            "name": "view_event",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 39,
+            "name": "view_any_event",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 40,
+            "name": "create_event",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 41,
+            "name": "update_event",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 42,
+            "name": "restore_event",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 43,
+            "name": "restore_any_event",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 44,
+            "name": "replicate_event",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 45,
+            "name": "reorder_event",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 46,
+            "name": "delete_event",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 47,
+            "name": "delete_any_event",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 48,
+            "name": "force_delete_event",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 49,
+            "name": "force_delete_any_event",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 50,
+            "name": "view_group",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 51,
+            "name": "view_any_group",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 52,
+            "name": "create_group",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 53,
+            "name": "update_group",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 54,
+            "name": "restore_group",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 55,
+            "name": "restore_any_group",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 56,
+            "name": "replicate_group",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 57,
+            "name": "reorder_group",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 58,
+            "name": "delete_group",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 59,
+            "name": "delete_any_group",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 60,
+            "name": "force_delete_group",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 61,
+            "name": "force_delete_any_group",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 62,
+            "name": "view_helpdesk",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:16",
+            "updated_at": "2025-02-17 15:34:16"
+        },
+        {
+            "id": 63,
+            "name": "view_any_helpdesk",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 64,
+            "name": "create_helpdesk",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 65,
+            "name": "update_helpdesk",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 66,
+            "name": "restore_helpdesk",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 67,
+            "name": "restore_any_helpdesk",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 68,
+            "name": "replicate_helpdesk",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 69,
+            "name": "reorder_helpdesk",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 70,
+            "name": "delete_helpdesk",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 71,
+            "name": "delete_any_helpdesk",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 72,
+            "name": "force_delete_helpdesk",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 73,
+            "name": "force_delete_any_helpdesk",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 74,
+            "name": "view_improvement::idea",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 75,
+            "name": "view_any_improvement::idea",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 76,
+            "name": "create_improvement::idea",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 77,
+            "name": "update_improvement::idea",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 78,
+            "name": "restore_improvement::idea",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 79,
+            "name": "restore_any_improvement::idea",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 80,
+            "name": "replicate_improvement::idea",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 81,
+            "name": "reorder_improvement::idea",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 82,
+            "name": "delete_improvement::idea",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 83,
+            "name": "delete_any_improvement::idea",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 84,
+            "name": "force_delete_improvement::idea",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 85,
+            "name": "force_delete_any_improvement::idea",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 86,
+            "name": "view_knowledge::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 87,
+            "name": "view_any_knowledge::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 88,
+            "name": "create_knowledge::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 89,
+            "name": "update_knowledge::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 90,
+            "name": "restore_knowledge::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 91,
+            "name": "restore_any_knowledge::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 92,
+            "name": "replicate_knowledge::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 93,
+            "name": "reorder_knowledge::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 94,
+            "name": "delete_knowledge::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 95,
+            "name": "delete_any_knowledge::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 96,
+            "name": "force_delete_knowledge::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 97,
+            "name": "force_delete_any_knowledge::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 98,
+            "name": "view_learning::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 99,
+            "name": "view_any_learning::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 100,
+            "name": "create_learning::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 101,
+            "name": "update_learning::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 102,
+            "name": "restore_learning::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 103,
+            "name": "restore_any_learning::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 104,
+            "name": "replicate_learning::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 105,
+            "name": "reorder_learning::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 106,
+            "name": "delete_learning::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 107,
+            "name": "delete_any_learning::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 108,
+            "name": "force_delete_learning::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 109,
+            "name": "force_delete_any_learning::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 110,
+            "name": "view_mart::asset",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 111,
+            "name": "view_any_mart::asset",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 112,
+            "name": "create_mart::asset",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 113,
+            "name": "update_mart::asset",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 114,
+            "name": "restore_mart::asset",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 115,
+            "name": "restore_any_mart::asset",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 116,
+            "name": "replicate_mart::asset",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 117,
+            "name": "reorder_mart::asset",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 118,
+            "name": "delete_mart::asset",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 119,
+            "name": "delete_any_mart::asset",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 120,
+            "name": "force_delete_mart::asset",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 121,
+            "name": "force_delete_any_mart::asset",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 122,
+            "name": "view_mart::asset::type",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 123,
+            "name": "view_any_mart::asset::type",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 124,
+            "name": "create_mart::asset::type",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 125,
+            "name": "update_mart::asset::type",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 126,
+            "name": "restore_mart::asset::type",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 127,
+            "name": "restore_any_mart::asset::type",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 128,
+            "name": "replicate_mart::asset::type",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 129,
+            "name": "reorder_mart::asset::type",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 130,
+            "name": "delete_mart::asset::type",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 131,
+            "name": "delete_any_mart::asset::type",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 132,
+            "name": "force_delete_mart::asset::type",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 133,
+            "name": "force_delete_any_mart::asset::type",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 134,
+            "name": "view_mart::request",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 135,
+            "name": "view_any_mart::request",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 136,
+            "name": "create_mart::request",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 137,
+            "name": "update_mart::request",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 138,
+            "name": "restore_mart::request",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 139,
+            "name": "restore_any_mart::request",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 140,
+            "name": "replicate_mart::request",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 141,
+            "name": "reorder_mart::request",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 142,
+            "name": "delete_mart::request",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 143,
+            "name": "delete_any_mart::request",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 144,
+            "name": "force_delete_mart::request",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 145,
+            "name": "force_delete_any_mart::request",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 146,
+            "name": "view_mart::request::history",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 147,
+            "name": "view_any_mart::request::history",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:17",
+            "updated_at": "2025-02-17 15:34:17"
+        },
+        {
+            "id": 148,
+            "name": "create_mart::request::history",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 149,
+            "name": "update_mart::request::history",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 150,
+            "name": "restore_mart::request::history",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 151,
+            "name": "restore_any_mart::request::history",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 152,
+            "name": "replicate_mart::request::history",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 153,
+            "name": "reorder_mart::request::history",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 154,
+            "name": "delete_mart::request::history",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 155,
+            "name": "delete_any_mart::request::history",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 156,
+            "name": "force_delete_mart::request::history",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 157,
+            "name": "force_delete_any_mart::request::history",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 158,
+            "name": "view_operations::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 159,
+            "name": "view_any_operations::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 160,
+            "name": "create_operations::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 161,
+            "name": "update_operations::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 162,
+            "name": "restore_operations::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 163,
+            "name": "restore_any_operations::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 164,
+            "name": "replicate_operations::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 165,
+            "name": "reorder_operations::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 166,
+            "name": "delete_operations::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 167,
+            "name": "delete_any_operations::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 168,
+            "name": "force_delete_operations::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 169,
+            "name": "force_delete_any_operations::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 170,
+            "name": "view_org::job::position",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 171,
+            "name": "view_any_org::job::position",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 172,
+            "name": "create_org::job::position",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 173,
+            "name": "update_org::job::position",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 174,
+            "name": "restore_org::job::position",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 175,
+            "name": "restore_any_org::job::position",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 176,
+            "name": "replicate_org::job::position",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 177,
+            "name": "reorder_org::job::position",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 178,
+            "name": "delete_org::job::position",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 179,
+            "name": "delete_any_org::job::position",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 180,
+            "name": "force_delete_org::job::position",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 181,
+            "name": "force_delete_any_org::job::position",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 182,
+            "name": "view_org::job::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 183,
+            "name": "view_any_org::job::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 184,
+            "name": "create_org::job::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 185,
+            "name": "update_org::job::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 186,
+            "name": "restore_org::job::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 187,
+            "name": "restore_any_org::job::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 188,
+            "name": "replicate_org::job::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 189,
+            "name": "reorder_org::job::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 190,
+            "name": "delete_org::job::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 191,
+            "name": "delete_any_org::job::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 192,
+            "name": "force_delete_org::job::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 193,
+            "name": "force_delete_any_org::job::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 194,
+            "name": "view_org::staff",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 195,
+            "name": "view_any_org::staff",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 196,
+            "name": "create_org::staff",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 197,
+            "name": "update_org::staff",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 198,
+            "name": "restore_org::staff",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 199,
+            "name": "restore_any_org::staff",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 200,
+            "name": "replicate_org::staff",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 201,
+            "name": "reorder_org::staff",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 202,
+            "name": "delete_org::staff",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 203,
+            "name": "delete_any_org::staff",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 204,
+            "name": "force_delete_org::staff",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 205,
+            "name": "force_delete_any_org::staff",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 206,
+            "name": "view_org::staff::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 207,
+            "name": "view_any_org::staff::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 208,
+            "name": "create_org::staff::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 209,
+            "name": "update_org::staff::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 210,
+            "name": "restore_org::staff::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 211,
+            "name": "restore_any_org::staff::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 212,
+            "name": "replicate_org::staff::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 213,
+            "name": "reorder_org::staff::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 214,
+            "name": "delete_org::staff::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 215,
+            "name": "delete_any_org::staff::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 216,
+            "name": "force_delete_org::staff::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 217,
+            "name": "force_delete_any_org::staff::role",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 218,
+            "name": "view_service::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 219,
+            "name": "view_any_service::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 220,
+            "name": "create_service::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 221,
+            "name": "update_service::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 222,
+            "name": "restore_service::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 223,
+            "name": "restore_any_service::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 224,
+            "name": "replicate_service::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 225,
+            "name": "reorder_service::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 226,
+            "name": "delete_service::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 227,
+            "name": "delete_any_service::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 228,
+            "name": "force_delete_service::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 229,
+            "name": "force_delete_any_service::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 230,
+            "name": "view_support::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 231,
+            "name": "view_any_support::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 232,
+            "name": "create_support::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 233,
+            "name": "update_support::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 234,
+            "name": "restore_support::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 235,
+            "name": "restore_any_support::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 236,
+            "name": "replicate_support::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 237,
+            "name": "reorder_support::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:18",
+            "updated_at": "2025-02-17 15:34:18"
+        },
+        {
+            "id": 238,
+            "name": "delete_support::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:19",
+            "updated_at": "2025-02-17 15:34:19"
+        },
+        {
+            "id": 239,
+            "name": "delete_any_support::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:19",
+            "updated_at": "2025-02-17 15:34:19"
+        },
+        {
+            "id": 240,
+            "name": "force_delete_support::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:19",
+            "updated_at": "2025-02-17 15:34:19"
+        },
+        {
+            "id": 241,
+            "name": "force_delete_any_support::menu",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:34:19",
+            "updated_at": "2025-02-17 15:34:19"
+        },
+        {
+            "id": 242,
+            "name": "view_task",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 243,
+            "name": "view_any_task",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 244,
+            "name": "create_task",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 245,
+            "name": "update_task",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 246,
+            "name": "restore_task",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 247,
+            "name": "restore_any_task",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 248,
+            "name": "replicate_task",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 249,
+            "name": "reorder_task",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 250,
+            "name": "delete_task",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 251,
+            "name": "delete_any_task",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 252,
+            "name": "force_delete_task",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 253,
+            "name": "force_delete_any_task",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 254,
+            "name": "page_EmployeeHandbook",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:41",
+            "updated_at": "2025-02-17 15:35:41"
+        },
+        {
+            "id": 255,
+            "name": "page_Location",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:42",
+            "updated_at": "2025-02-17 15:35:42"
+        },
+        {
+            "id": 256,
+            "name": "page_OrganizationChart",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:42",
+            "updated_at": "2025-02-17 15:35:42"
+        },
+        {
+            "id": 257,
+            "name": "widget_CalendarWidget",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:42",
+            "updated_at": "2025-02-17 15:35:42"
+        },
+        {
+            "id": 258,
+            "name": "widget_KioskInfoWidget",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:42",
+            "updated_at": "2025-02-17 15:35:42"
+        },
+        {
+            "id": 259,
+            "name": "widget_StatsOverviewWidget",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:42",
+            "updated_at": "2025-02-17 15:35:42"
+        },
+        {
+            "id": 260,
+            "name": "widget_OrderStatusChart",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:42",
+            "updated_at": "2025-02-17 15:35:42"
+        },
+        {
+            "id": 261,
+            "name": "widget_RevenueChart",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:42",
+            "updated_at": "2025-02-17 15:35:42"
+        },
+        {
+            "id": 262,
+            "name": "widget_OrdersChart",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:42",
+            "updated_at": "2025-02-17 15:35:42"
+        },
+        {
+            "id": 263,
+            "name": "widget_CustomersChart",
+            "guard_name": "web",
+            "created_at": "2025-02-17 15:35:42",
+            "updated_at": "2025-02-17 15:35:42"
+        },
+        {
+            "id": 264,
+            "name": "view_role",
+            "guard_name": "web",
+            "created_at": "2025-02-18 08:35:33",
+            "updated_at": "2025-02-18 08:35:33"
+        },
+        {
+            "id": 265,
+            "name": "view_any_role",
+            "guard_name": "web",
+            "created_at": "2025-02-18 08:35:33",
+            "updated_at": "2025-02-18 08:35:33"
+        },
+        {
+            "id": 266,
+            "name": "create_role",
+            "guard_name": "web",
+            "created_at": "2025-02-18 08:35:33",
+            "updated_at": "2025-02-18 08:35:33"
+        },
+        {
+            "id": 267,
+            "name": "update_role",
+            "guard_name": "web",
+            "created_at": "2025-02-18 08:35:33",
+            "updated_at": "2025-02-18 08:35:33"
+        },
+        {
+            "id": 268,
+            "name": "delete_role",
+            "guard_name": "web",
+            "created_at": "2025-02-18 08:35:33",
+            "updated_at": "2025-02-18 08:35:33"
+        },
+        {
+            "id": 269,
+            "name": "delete_any_role",
+            "guard_name": "web",
+            "created_at": "2025-02-18 08:35:33",
+            "updated_at": "2025-02-18 08:35:33"
+        }
+    ],
+    "role_has_permissions": [
+        {
+            "permission_id": 1,
+            "role_id": 1
+        },
+        {
+            "permission_id": 2,
+            "role_id": 2
+        },
+        {
+            "permission_id": 3,
+            "role_id": 2
+        },
+        {
+            "permission_id": 4,
+            "role_id": 2
+        },
+        {
+            "permission_id": 5,
+            "role_id": 2
+        },
+        {
+            "permission_id": 6,
+            "role_id": 2
+        },
+        {
+            "permission_id": 7,
+            "role_id": 2
+        },
+        {
+            "permission_id": 8,
+            "role_id": 2
+        },
+        {
+            "permission_id": 9,
+            "role_id": 2
+        },
+        {
+            "permission_id": 10,
+            "role_id": 2
+        },
+        {
+            "permission_id": 11,
+            "role_id": 2
+        },
+        {
+            "permission_id": 12,
+            "role_id": 2
+        },
+        {
+            "permission_id": 13,
+            "role_id": 2
+        },
+        {
+            "permission_id": 14,
+            "role_id": 2
+        },
+        {
+            "permission_id": 15,
+            "role_id": 2
+        },
+        {
+            "permission_id": 16,
+            "role_id": 2
+        },
+        {
+            "permission_id": 17,
+            "role_id": 2
+        },
+        {
+            "permission_id": 18,
+            "role_id": 2
+        },
+        {
+            "permission_id": 19,
+            "role_id": 2
+        },
+        {
+            "permission_id": 20,
+            "role_id": 2
+        },
+        {
+            "permission_id": 21,
+            "role_id": 2
+        },
+        {
+            "permission_id": 22,
+            "role_id": 2
+        },
+        {
+            "permission_id": 23,
+            "role_id": 2
+        },
+        {
+            "permission_id": 24,
+            "role_id": 2
+        },
+        {
+            "permission_id": 25,
+            "role_id": 2
+        },
+        {
+            "permission_id": 26,
+            "role_id": 2
+        },
+        {
+            "permission_id": 27,
+            "role_id": 2
+        },
+        {
+            "permission_id": 28,
+            "role_id": 2
+        },
+        {
+            "permission_id": 29,
+            "role_id": 2
+        },
+        {
+            "permission_id": 30,
+            "role_id": 2
+        },
+        {
+            "permission_id": 31,
+            "role_id": 2
+        },
+        {
+            "permission_id": 32,
+            "role_id": 2
+        },
+        {
+            "permission_id": 33,
+            "role_id": 2
+        },
+        {
+            "permission_id": 34,
+            "role_id": 2
+        },
+        {
+            "permission_id": 35,
+            "role_id": 2
+        },
+        {
+            "permission_id": 36,
+            "role_id": 2
+        },
+        {
+            "permission_id": 37,
+            "role_id": 2
+        },
+        {
+            "permission_id": 38,
+            "role_id": 2
+        },
+        {
+            "permission_id": 39,
+            "role_id": 2
+        },
+        {
+            "permission_id": 40,
+            "role_id": 2
+        },
+        {
+            "permission_id": 41,
+            "role_id": 2
+        },
+        {
+            "permission_id": 42,
+            "role_id": 2
+        },
+        {
+            "permission_id": 43,
+            "role_id": 2
+        },
+        {
+            "permission_id": 44,
+            "role_id": 2
+        },
+        {
+            "permission_id": 45,
+            "role_id": 2
+        },
+        {
+            "permission_id": 46,
+            "role_id": 2
+        },
+        {
+            "permission_id": 47,
+            "role_id": 2
+        },
+        {
+            "permission_id": 48,
+            "role_id": 2
+        },
+        {
+            "permission_id": 49,
+            "role_id": 2
+        },
+        {
+            "permission_id": 50,
+            "role_id": 2
+        },
+        {
+            "permission_id": 51,
+            "role_id": 2
+        },
+        {
+            "permission_id": 52,
+            "role_id": 2
+        },
+        {
+            "permission_id": 53,
+            "role_id": 2
+        },
+        {
+            "permission_id": 54,
+            "role_id": 2
+        },
+        {
+            "permission_id": 55,
+            "role_id": 2
+        },
+        {
+            "permission_id": 56,
+            "role_id": 2
+        },
+        {
+            "permission_id": 57,
+            "role_id": 2
+        },
+        {
+            "permission_id": 58,
+            "role_id": 2
+        },
+        {
+            "permission_id": 59,
+            "role_id": 2
+        },
+        {
+            "permission_id": 60,
+            "role_id": 2
+        },
+        {
+            "permission_id": 61,
+            "role_id": 2
+        },
+        {
+            "permission_id": 62,
+            "role_id": 2
+        },
+        {
+            "permission_id": 63,
+            "role_id": 2
+        },
+        {
+            "permission_id": 64,
+            "role_id": 2
+        },
+        {
+            "permission_id": 65,
+            "role_id": 2
+        },
+        {
+            "permission_id": 66,
+            "role_id": 2
+        },
+        {
+            "permission_id": 67,
+            "role_id": 2
+        },
+        {
+            "permission_id": 68,
+            "role_id": 2
+        },
+        {
+            "permission_id": 69,
+            "role_id": 2
+        },
+        {
+            "permission_id": 70,
+            "role_id": 2
+        },
+        {
+            "permission_id": 71,
+            "role_id": 2
+        },
+        {
+            "permission_id": 72,
+            "role_id": 2
+        },
+        {
+            "permission_id": 73,
+            "role_id": 2
+        },
+        {
+            "permission_id": 74,
+            "role_id": 2
+        },
+        {
+            "permission_id": 75,
+            "role_id": 2
+        },
+        {
+            "permission_id": 76,
+            "role_id": 2
+        },
+        {
+            "permission_id": 77,
+            "role_id": 2
+        },
+        {
+            "permission_id": 78,
+            "role_id": 2
+        },
+        {
+            "permission_id": 79,
+            "role_id": 2
+        },
+        {
+            "permission_id": 80,
+            "role_id": 2
+        },
+        {
+            "permission_id": 81,
+            "role_id": 2
+        },
+        {
+            "permission_id": 82,
+            "role_id": 2
+        },
+        {
+            "permission_id": 83,
+            "role_id": 2
+        },
+        {
+            "permission_id": 84,
+            "role_id": 2
+        },
+        {
+            "permission_id": 85,
+            "role_id": 2
+        },
+        {
+            "permission_id": 86,
+            "role_id": 2
+        },
+        {
+            "permission_id": 87,
+            "role_id": 2
+        },
+        {
+            "permission_id": 88,
+            "role_id": 2
+        },
+        {
+            "permission_id": 89,
+            "role_id": 2
+        },
+        {
+            "permission_id": 90,
+            "role_id": 2
+        },
+        {
+            "permission_id": 91,
+            "role_id": 2
+        },
+        {
+            "permission_id": 92,
+            "role_id": 2
+        },
+        {
+            "permission_id": 93,
+            "role_id": 2
+        },
+        {
+            "permission_id": 94,
+            "role_id": 2
+        },
+        {
+            "permission_id": 95,
+            "role_id": 2
+        },
+        {
+            "permission_id": 96,
+            "role_id": 2
+        },
+        {
+            "permission_id": 97,
+            "role_id": 2
+        },
+        {
+            "permission_id": 98,
+            "role_id": 2
+        },
+        {
+            "permission_id": 99,
+            "role_id": 2
+        },
+        {
+            "permission_id": 100,
+            "role_id": 2
+        },
+        {
+            "permission_id": 101,
+            "role_id": 2
+        },
+        {
+            "permission_id": 102,
+            "role_id": 2
+        },
+        {
+            "permission_id": 103,
+            "role_id": 2
+        },
+        {
+            "permission_id": 104,
+            "role_id": 2
+        },
+        {
+            "permission_id": 105,
+            "role_id": 2
+        },
+        {
+            "permission_id": 106,
+            "role_id": 2
+        },
+        {
+            "permission_id": 107,
+            "role_id": 2
+        },
+        {
+            "permission_id": 108,
+            "role_id": 2
+        },
+        {
+            "permission_id": 109,
+            "role_id": 2
+        },
+        {
+            "permission_id": 110,
+            "role_id": 2
+        },
+        {
+            "permission_id": 111,
+            "role_id": 2
+        },
+        {
+            "permission_id": 112,
+            "role_id": 2
+        },
+        {
+            "permission_id": 113,
+            "role_id": 2
+        },
+        {
+            "permission_id": 114,
+            "role_id": 2
+        },
+        {
+            "permission_id": 115,
+            "role_id": 2
+        },
+        {
+            "permission_id": 116,
+            "role_id": 2
+        },
+        {
+            "permission_id": 117,
+            "role_id": 2
+        },
+        {
+            "permission_id": 118,
+            "role_id": 2
+        },
+        {
+            "permission_id": 119,
+            "role_id": 2
+        },
+        {
+            "permission_id": 120,
+            "role_id": 2
+        },
+        {
+            "permission_id": 121,
+            "role_id": 2
+        },
+        {
+            "permission_id": 122,
+            "role_id": 2
+        },
+        {
+            "permission_id": 123,
+            "role_id": 2
+        },
+        {
+            "permission_id": 124,
+            "role_id": 2
+        },
+        {
+            "permission_id": 125,
+            "role_id": 2
+        },
+        {
+            "permission_id": 126,
+            "role_id": 2
+        },
+        {
+            "permission_id": 127,
+            "role_id": 2
+        },
+        {
+            "permission_id": 128,
+            "role_id": 2
+        },
+        {
+            "permission_id": 129,
+            "role_id": 2
+        },
+        {
+            "permission_id": 130,
+            "role_id": 2
+        },
+        {
+            "permission_id": 131,
+            "role_id": 2
+        },
+        {
+            "permission_id": 132,
+            "role_id": 2
+        },
+        {
+            "permission_id": 133,
+            "role_id": 2
+        },
+        {
+            "permission_id": 134,
+            "role_id": 2
+        },
+        {
+            "permission_id": 135,
+            "role_id": 2
+        },
+        {
+            "permission_id": 136,
+            "role_id": 2
+        },
+        {
+            "permission_id": 137,
+            "role_id": 2
+        },
+        {
+            "permission_id": 138,
+            "role_id": 2
+        },
+        {
+            "permission_id": 139,
+            "role_id": 2
+        },
+        {
+            "permission_id": 140,
+            "role_id": 2
+        },
+        {
+            "permission_id": 141,
+            "role_id": 2
+        },
+        {
+            "permission_id": 142,
+            "role_id": 2
+        },
+        {
+            "permission_id": 143,
+            "role_id": 2
+        },
+        {
+            "permission_id": 144,
+            "role_id": 2
+        },
+        {
+            "permission_id": 145,
+            "role_id": 2
+        },
+        {
+            "permission_id": 146,
+            "role_id": 2
+        },
+        {
+            "permission_id": 147,
+            "role_id": 2
+        },
+        {
+            "permission_id": 148,
+            "role_id": 2
+        },
+        {
+            "permission_id": 149,
+            "role_id": 2
+        },
+        {
+            "permission_id": 150,
+            "role_id": 2
+        },
+        {
+            "permission_id": 151,
+            "role_id": 2
+        },
+        {
+            "permission_id": 152,
+            "role_id": 2
+        },
+        {
+            "permission_id": 153,
+            "role_id": 2
+        },
+        {
+            "permission_id": 154,
+            "role_id": 2
+        },
+        {
+            "permission_id": 155,
+            "role_id": 2
+        },
+        {
+            "permission_id": 156,
+            "role_id": 2
+        },
+        {
+            "permission_id": 157,
+            "role_id": 2
+        },
+        {
+            "permission_id": 158,
+            "role_id": 2
+        },
+        {
+            "permission_id": 159,
+            "role_id": 2
+        },
+        {
+            "permission_id": 160,
+            "role_id": 2
+        },
+        {
+            "permission_id": 161,
+            "role_id": 2
+        },
+        {
+            "permission_id": 162,
+            "role_id": 2
+        },
+        {
+            "permission_id": 163,
+            "role_id": 2
+        },
+        {
+            "permission_id": 164,
+            "role_id": 2
+        },
+        {
+            "permission_id": 165,
+            "role_id": 2
+        },
+        {
+            "permission_id": 166,
+            "role_id": 2
+        },
+        {
+            "permission_id": 167,
+            "role_id": 2
+        },
+        {
+            "permission_id": 168,
+            "role_id": 2
+        },
+        {
+            "permission_id": 169,
+            "role_id": 2
+        },
+        {
+            "permission_id": 170,
+            "role_id": 2
+        },
+        {
+            "permission_id": 171,
+            "role_id": 2
+        },
+        {
+            "permission_id": 172,
+            "role_id": 2
+        },
+        {
+            "permission_id": 173,
+            "role_id": 2
+        },
+        {
+            "permission_id": 174,
+            "role_id": 2
+        },
+        {
+            "permission_id": 175,
+            "role_id": 2
+        },
+        {
+            "permission_id": 176,
+            "role_id": 2
+        },
+        {
+            "permission_id": 177,
+            "role_id": 2
+        },
+        {
+            "permission_id": 178,
+            "role_id": 2
+        },
+        {
+            "permission_id": 179,
+            "role_id": 2
+        },
+        {
+            "permission_id": 180,
+            "role_id": 2
+        },
+        {
+            "permission_id": 181,
+            "role_id": 2
+        },
+        {
+            "permission_id": 182,
+            "role_id": 2
+        },
+        {
+            "permission_id": 183,
+            "role_id": 2
+        },
+        {
+            "permission_id": 184,
+            "role_id": 2
+        },
+        {
+            "permission_id": 185,
+            "role_id": 2
+        },
+        {
+            "permission_id": 186,
+            "role_id": 2
+        },
+        {
+            "permission_id": 187,
+            "role_id": 2
+        },
+        {
+            "permission_id": 188,
+            "role_id": 2
+        },
+        {
+            "permission_id": 189,
+            "role_id": 2
+        },
+        {
+            "permission_id": 190,
+            "role_id": 2
+        },
+        {
+            "permission_id": 191,
+            "role_id": 2
+        },
+        {
+            "permission_id": 192,
+            "role_id": 2
+        },
+        {
+            "permission_id": 193,
+            "role_id": 2
+        },
+        {
+            "permission_id": 194,
+            "role_id": 2
+        },
+        {
+            "permission_id": 195,
+            "role_id": 2
+        },
+        {
+            "permission_id": 196,
+            "role_id": 2
+        },
+        {
+            "permission_id": 197,
+            "role_id": 2
+        },
+        {
+            "permission_id": 198,
+            "role_id": 2
+        },
+        {
+            "permission_id": 199,
+            "role_id": 2
+        },
+        {
+            "permission_id": 200,
+            "role_id": 2
+        },
+        {
+            "permission_id": 201,
+            "role_id": 2
+        },
+        {
+            "permission_id": 202,
+            "role_id": 2
+        },
+        {
+            "permission_id": 203,
+            "role_id": 2
+        },
+        {
+            "permission_id": 204,
+            "role_id": 2
+        },
+        {
+            "permission_id": 205,
+            "role_id": 2
+        },
+        {
+            "permission_id": 206,
+            "role_id": 2
+        },
+        {
+            "permission_id": 207,
+            "role_id": 2
+        },
+        {
+            "permission_id": 208,
+            "role_id": 2
+        },
+        {
+            "permission_id": 209,
+            "role_id": 2
+        },
+        {
+            "permission_id": 210,
+            "role_id": 2
+        },
+        {
+            "permission_id": 211,
+            "role_id": 2
+        },
+        {
+            "permission_id": 212,
+            "role_id": 2
+        },
+        {
+            "permission_id": 213,
+            "role_id": 2
+        },
+        {
+            "permission_id": 214,
+            "role_id": 2
+        },
+        {
+            "permission_id": 215,
+            "role_id": 2
+        },
+        {
+            "permission_id": 216,
+            "role_id": 2
+        },
+        {
+            "permission_id": 217,
+            "role_id": 2
+        },
+        {
+            "permission_id": 264,
+            "role_id": 2
+        },
+        {
+            "permission_id": 265,
+            "role_id": 2
+        },
+        {
+            "permission_id": 266,
+            "role_id": 2
+        },
+        {
+            "permission_id": 267,
+            "role_id": 2
+        },
+        {
+            "permission_id": 268,
+            "role_id": 2
+        },
+        {
+            "permission_id": 269,
+            "role_id": 2
+        },
+        {
+            "permission_id": 218,
+            "role_id": 2
+        },
+        {
+            "permission_id": 219,
+            "role_id": 2
+        },
+        {
+            "permission_id": 220,
+            "role_id": 2
+        },
+        {
+            "permission_id": 221,
+            "role_id": 2
+        },
+        {
+            "permission_id": 222,
+            "role_id": 2
+        },
+        {
+            "permission_id": 223,
+            "role_id": 2
+        },
+        {
+            "permission_id": 224,
+            "role_id": 2
+        },
+        {
+            "permission_id": 225,
+            "role_id": 2
+        },
+        {
+            "permission_id": 226,
+            "role_id": 2
+        },
+        {
+            "permission_id": 227,
+            "role_id": 2
+        },
+        {
+            "permission_id": 228,
+            "role_id": 2
+        },
+        {
+            "permission_id": 229,
+            "role_id": 2
+        },
+        {
+            "permission_id": 230,
+            "role_id": 2
+        },
+        {
+            "permission_id": 231,
+            "role_id": 2
+        },
+        {
+            "permission_id": 232,
+            "role_id": 2
+        },
+        {
+            "permission_id": 233,
+            "role_id": 2
+        },
+        {
+            "permission_id": 234,
+            "role_id": 2
+        },
+        {
+            "permission_id": 235,
+            "role_id": 2
+        },
+        {
+            "permission_id": 236,
+            "role_id": 2
+        },
+        {
+            "permission_id": 237,
+            "role_id": 2
+        },
+        {
+            "permission_id": 238,
+            "role_id": 2
+        },
+        {
+            "permission_id": 239,
+            "role_id": 2
+        },
+        {
+            "permission_id": 240,
+            "role_id": 2
+        },
+        {
+            "permission_id": 241,
+            "role_id": 2
+        },
+        {
+            "permission_id": 242,
+            "role_id": 2
+        },
+        {
+            "permission_id": 243,
+            "role_id": 2
+        },
+        {
+            "permission_id": 244,
+            "role_id": 2
+        },
+        {
+            "permission_id": 245,
+            "role_id": 2
+        },
+        {
+            "permission_id": 246,
+            "role_id": 2
+        },
+        {
+            "permission_id": 247,
+            "role_id": 2
+        },
+        {
+            "permission_id": 248,
+            "role_id": 2
+        },
+        {
+            "permission_id": 249,
+            "role_id": 2
+        },
+        {
+            "permission_id": 250,
+            "role_id": 2
+        },
+        {
+            "permission_id": 251,
+            "role_id": 2
+        },
+        {
+            "permission_id": 252,
+            "role_id": 2
+        },
+        {
+            "permission_id": 253,
+            "role_id": 2
+        },
+        {
+            "permission_id": 254,
+            "role_id": 2
+        },
+        {
+            "permission_id": 255,
+            "role_id": 2
+        },
+        {
+            "permission_id": 256,
+            "role_id": 2
+        },
+        {
+            "permission_id": 257,
+            "role_id": 2
+        },
+        {
+            "permission_id": 258,
+            "role_id": 2
+        },
+        {
+            "permission_id": 260,
+            "role_id": 2
+        },
+        {
+            "permission_id": 261,
+            "role_id": 2
+        },
+        {
+            "permission_id": 262,
+            "role_id": 2
+        },
+        {
+            "permission_id": 263,
+            "role_id": 2
+        }
+    ],
+    "model_has_roles": [
+        {
+            "role_id": 1,
+            "model_type": "App\\Models\\User",
+            "model_id": 2
+        },
+        {
+            "role_id": 2,
+            "model_type": "App\\Models\\User",
+            "model_id": 2
+        }
+    ]
+}

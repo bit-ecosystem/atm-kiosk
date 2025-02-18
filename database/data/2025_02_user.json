@@ -1,0 +1,23 @@
+{
+    "user_types": [
+        {
+            "id": 1,
+            "name": "Faros",
+            "email": "admin@email.com",
+            "user_type_id": 12
+        },
+        {
+            "id": 2,
+            "name": "Ahmad Faros",
+            "email": "ahmadfaros.othman@amkor.com",
+            "user_type_id": 10
+        },
+        {
+            "id": 2,
+            "name": "Muhammad Afiq",
+            "email": "muhammadafiq.kamalruzaman@amkor.com",
+            "user_type_id": 10
+        }
+
+    ]
+}
