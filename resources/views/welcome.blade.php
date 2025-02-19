@@ -33,6 +33,12 @@
                             <nav class="-mx-3 flex flex-1 justify-end">
                                 @auth
                                     <a
+                                        href="{{ url('/staff') }}"
+                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#02829F] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                    >
+                                        Staff Portal
+                                    </a>
+                                    <a
                                         href="{{ url('/about') }}"
                                         class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#02829F] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                     >
@@ -49,7 +55,7 @@
                     <main class="mt-6">
                         <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
                             <a
-                                href="https://laravel.com/docs"
+                                href="https://amkor.com/"
                                 id="docs-card"
                                 class="flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#02829F] md:row-span-3 lg:p-10 lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#02829F]"
                             >
@@ -82,11 +88,10 @@
                                         </div>
 
                                         <div class="pt-3 sm:pt-5 lg:pt-0">
-                                            <h2 class="text-xl font-semibold text-black dark:text-white">Documentation</h2>
+                                            <h2 class="text-xl font-semibold text-black dark:text-white">About Amkor</h2>
 
                                             <p class="mt-4 text-sm/relaxed">
-                                                Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
-                                            </p>
+                                                15km, Jalan Klang-Banting,<br>Telok Panglima Garang (FIZ),<br>42507 Kuala Langat, Selangor Darul Ehsan, <strong>Malaysia</strong> <br><br> Amkor Technology Malaysia is part of Amkor Technology</p>
                                         </div>
                                     </div>
 
@@ -95,7 +100,7 @@
                             </a>
 
                             <a
-                                href="https://laracasts.com"
+                                href="https://amkor.com/careers/malaysia/"
                                 class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#02829F] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#02829F]"
                             >
                                 <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#02829F]/10 sm:size-16">
@@ -103,10 +108,10 @@
                                 </div>
 
                                 <div class="pt-3 sm:pt-5">
-                                    <h2 class="text-xl font-semibold text-black dark:text-white">Laracasts</h2>
+                                    <h2 class="text-xl font-semibold text-black dark:text-white">Career Opportunities</h2>
 
                                     <p class="mt-4 text-sm/relaxed">
-                                        Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
+                                        Our unique corporate culture is reflected in our main purpose: to use our collective talents and energies to achieve prosperity and fulfillment for our customers, our company and our people. <br><br><strong>Amkor Technology is an Equal Opportunity Employer.</strong>
                                     </p>
                                 </div>
 
@@ -114,7 +119,7 @@
                             </a>
 
                             <a
-                                href="https://laravel-news.com"
+                                href="https://amkor.com/applications/"
                                 class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#02829F] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#02829F]"
                             >
                                 <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#02829F]/10 sm:size-16">
@@ -122,10 +127,10 @@
                                 </div>
 
                                 <div class="pt-3 sm:pt-5">
-                                    <h2 class="text-xl font-semibold text-black dark:text-white">Laravel News</h2>
+                                    <h2 class="text-xl font-semibold text-black dark:text-white">Applications</h2>
 
                                     <p class="mt-4 text-sm/relaxed">
-                                        Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
+                                        Amkor provides a complete range of package solutions that address the unique challenges associated with powering the smart product revolution in applications. Putting the latest packaging technologies to work for you.
                                     </p>
                                 </div>
 
@@ -144,10 +149,10 @@
                                 </div>
 
                                 <div class="pt-3 sm:pt-5">
-                                    <h2 class="text-xl font-semibold text-black dark:text-white">Vibrant Ecosystem</h2>
+                                    <h2 class="text-xl font-semibold text-black dark:text-white">Package Overview</h2>
 
                                     <p class="mt-4 text-sm/relaxed">
-                                        Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white dark:focus-visible:ring-[#02829F]">Forge</a>, <a href="https://vapor.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white">Vapor</a>, <a href="https://nova.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white">Nova</a>, <a href="https://envoyer.io" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white">Envoyer</a>, and <a href="https://herd.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white">Herd</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white">Echo</a>, <a href="https://laravel.com/docs/horizon" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white">Telescope</a>, and more.
+                                        To serve the diverse needs of our world-class semiconductor manufacturers, Amkor offers more than 3000 different package formats and sizes. Packages range from traditional <a href="https://amkor.com/packaging/leadframe/" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white dark:focus-visible:ring-[#02829F]">leadframe</a> ICs for through-hole and surface mounting, to those required in high pin count and high-density applications such as <a href="https://amkor.com/packaging/laminate/stacked-csp/" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white dark:focus-visible:ring-[#02829F]">Stacked Die</a>, <a href="https://amkor.com/packaging/wafer-level-packaging/" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white dark:focus-visible:ring-[#02829F]">wafer level</a>, <a href="https://amkor.com/technology/mems-and-sensors/" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white dark:focus-visible:ring-[#02829F]">MEMS</a>, <a href="https://amkor.com/technology/optical-sensors/" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white dark:focus-visible:ring-[#02829F]">Optical</a>, <a href="https://amkor.com/technology/flip-chip/" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white dark:focus-visible:ring-[#02829F]">Flip Chip</a>, Through Silicon Via (<a href="https://amkor.com/technology/25d-3d-tsv/" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white dark:focus-visible:ring-[#02829F]">TSV</a>) and <a href="https://amkor.com/technology/3d-stacked-die/" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#02829F] dark:hover:text-white dark:focus-visible:ring-[#02829F]">3D Packaging</a>.
                                     </p>
                                 </div>
                             </div>
