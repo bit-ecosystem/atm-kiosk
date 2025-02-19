@@ -24,6 +24,7 @@ class EditorPanelProvider extends PanelProvider
     {
         $panel = $panel
             ->id('editor')
+            ->homeUrl('/')
             ->path('editor')
             ->colors([
                 'primary' => Color::Fuchsia,

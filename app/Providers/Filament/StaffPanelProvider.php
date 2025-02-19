@@ -27,7 +27,7 @@ class StaffPanelProvider extends PanelProvider
         return $panel
             ->id('staff')
             ->path('staff')
-            ->homeUrl('/about')
+            ->homeUrl('/')
             ->colors([
                 'primary' => Color::Cyan,
             ])
