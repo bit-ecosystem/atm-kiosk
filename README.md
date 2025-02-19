@@ -35,3 +35,6 @@ chown your_user:your_group /srv/kiosk/database/database.sqlite
 chown your_user:your_group /srv/kiosk/database
 chmod 777 /srv/kiosk/database
 chmod 666 /srv/kiosk/database/database.sqlite
+
+git checkout -f
+git pull origin 18feb25
