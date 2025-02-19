@@ -30,20 +30,11 @@
                         </div>
 
                         @if (Route::has('login'))
-                            <nav class="-mx-3 flex flex-1 justify-end">
+                            <nav class="-mx-2 flex flex-1 justify-end">
                                 @auth
-                                    <a
-                                        href="{{ url('/staff') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#02829F] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                    >
-                                        Staff Portal
-                                    </a>
-                                    <a
-                                        href="{{ url('/about') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#02829F] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                    >
-                                        About
-                                    </a>
+                <!-- Navigation Links -->
+                @include('components.panel-links')
+
                                 @else
                                     <a href="{{ url('auth/redirect') }}" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#02829F] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"> Login/Register
                                     </a>

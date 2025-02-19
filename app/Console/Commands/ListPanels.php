@@ -53,7 +53,11 @@ class ListPanels extends Command
             $bladeContent .= "            </x-nav-link>\n";
             $bladeContent .= "        </div>\n";
         }
-
+        $bladeContent .= "        <div class=\"hidden space-x-8 sm:-my-px sm:ms-10 sm:flex\">\n";
+        $bladeContent .= "            <x-nav-link href=\"{{ route('about') }}\">\n";
+        $bladeContent .= "                About\n";
+        $bladeContent .= "            </x-nav-link>\n";
+        $bladeContent .= "        </div>\n";
         // Save the content to panel-links.blade.php
         File::put(resource_path('views/components/panel-links.blade.php'), $bladeContent);
 

@@ -22,7 +22,7 @@ class EditorPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
-        return $panel
+        $panel = $panel
             ->id('editor')
             ->path('editor')
             ->colors([
@@ -52,5 +52,26 @@ class EditorPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ]);
+
+        // Discover additional resources, pages, and widgets in Modules
+        $modulePaths = glob(app_path('Modules/*/App/Filament/Editor/Resources'), GLOB_ONLYDIR);
+        foreach ($modulePaths as $path) {
+            $namespace = 'App\\' . str_replace('/', '\\', str_replace(app_path() . '/', '', $path));
+            $panel->discoverResources(in: $path, for: $namespace);
+        }
+
+        $modulePaths = glob(app_path('Modules/*/App/Filament/Editor/Pages'), GLOB_ONLYDIR);
+        foreach ($modulePaths as $path) {
+            $namespace = 'App\\' . str_replace('/', '\\', str_replace(app_path() . '/', '', $path));
+            $panel->discoverPages(in: $path, for: $namespace);
+        }
+
+        $modulePaths = glob(app_path('Modules/*/App/Filament/Editor/Widgets'), GLOB_ONLYDIR);
+        foreach ($modulePaths as $path) {
+            $namespace = 'App\\' . str_replace('/', '\\', str_replace(app_path() . '/', '', $path));
+            $panel->discoverWidgets(in: $path, for: $namespace);
+        }
+
+        return $panel;
     }
 }
