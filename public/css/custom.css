@@ -1,0 +1,7 @@
+.create-eip-page {
+    background-image: url('/storage/app/public/about/atm-site.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px; /* Optional: Add some padding */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}

@@ -22,13 +22,28 @@ class LoginController extends Controller
     public function handleProviderCallback()
     {
         $user = Socialite::driver('keycloak')->user();
-
         $userJson = json_encode($user);
-        //dump($user);
+
+        // Extract the value after 'CN='
+        $manager = $user->user['Manager'];
+        if (preg_match('/CN=([^,]+)/', $manager, $matches)) {
+            $reportsTo = $matches[1];
+        } else {
+            $reportsTo = null; // Default to null if 'CN=' is not found
+        }
+
         // Store user data in session
         session(['keycloak_user' => $userJson]);
-
-        $authUser = User::firstOrCreate([
+        session(['cu.name' => $user['name'] ?? null]);
+        session(['cu.email' => $user['email'] ?? null]);
+        session(['cu.staffno' => $user->user['preferred_username'] ?? null]);
+        session(['cu.department' => $user->user['department'] ?? null]);
+        session(['cu.group' => $user->user['roles']['user_group'] ?? null]);
+        session(['cu.realm' => $user->user['roles']['realm'] ?? null]);
+        session(['cu.client' => $user->user['roles']['client'] ?? null]);
+        session(['cu.reportsTo' => $reportsTo]);
+        
+	$authUser = User::firstOrCreate([
             'email' => $user->email,
         ], [
             'name' => $user->name,
@@ -78,5 +93,14 @@ class LoginController extends Controller
             $groupIds[] = $group->id;
         }
         $authUser->groups()->sync($groupIds);
+    }
+    private function promptYesNo($message)
+    {
+        echo $message . " (yes/no): ";
+        $handle = fopen("php://stdin", "r");
+        $response = trim(fgets($handle));
+        fclose($handle);
+
+        return strtolower($response) === 'yes';
     }
 }

@@ -1,0 +1,189 @@
+{
+    "options": [
+    {
+        "type": "process",
+        "list": "EOL"
+        
+    },
+    {
+        "type": "process",
+        "list": "FOL"
+        
+    },
+    {
+        "type": "process",
+        "list": "MOL"
+        
+    },
+    {
+        "type": "process",
+        "list": "Others"
+        
+    },
+    {
+        "type": "Jenis",
+        "list": "Quality"
+        
+    },
+    {
+        "type": "Jenis",
+        "list": "Safety"
+        
+    },
+    {
+        "type": "Jenis",
+        "list": "Others"
+        
+    },
+    {
+        "type": "Quality",
+        "list": "01. Human Error Reduction"
+        
+    },
+    {
+        "type": "Quality",
+        "list": "02. Improve Process / Job Step"
+        
+    },
+    {
+        "type": "Quality",
+        "list": "03. Quality Up"
+        
+    },
+    {
+        "type": "Quality",
+        "list": "04. Reduce Defect/Rejection/Claim"
+        
+    },
+    {
+        "type": "Quality",
+        "list": "05. Improve Defect Detection"
+        
+    },
+    {
+        "type": "Quality",
+        "list": "06. Poka-Yoke"
+        
+    },
+    {
+        "type": "Quality",
+        "list": "08. Yield Up"
+        
+    },
+    {
+        "type": "Safety",
+        "list": "01. OHSAS / Safety"
+        
+    },
+    {
+        "type": "Safety",
+        "list": "02. Safety Up"
+        
+    },
+    {
+        "type": "Safety",
+        "list": "03. Security Up"
+        
+    },
+    {
+        "type": "Safety",
+        "list": "04. Near Miss"
+        
+    },
+    {
+        "type": "Safety",
+        "list": "05. Unsafe Condition"
+        
+    },
+    {
+        "type": "Safety",
+        "list": "06. Unsafe Act"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "01. 5S"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "02. Better Work Environment"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "03. Cost Down"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "04. Effective Communication"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "05. Efficiency Up"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "06. EMS"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "07. Energy Saving"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "08. Image Up"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "09. Improve Capacity"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "10. Improve Material"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "11. Improve Method"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "12. Knowledge Up"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "13. Waste Reduction"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "14. Productivity Up"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "15. Sales Up"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "16. VA / CD"
+        
+    },
+    {
+        "type": "OtherEIP",
+        "list": "17. Others"
+        
+    }
+    ]
+}
